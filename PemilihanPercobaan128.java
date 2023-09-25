@@ -9,10 +9,8 @@ public class PemilihanPercobaan128 {
         System.out.print("Masukan angka:  ");
         int angka = input00.nextInt();
 
-        if (angka % 2 == 0)
-            System.out.println("Angka "+angka+" bilangan genap");
-        else
-            System.out.println("Angka "+angka+" bilangan ganjil");
+        String result = (angka % 2 == 0) ? "Angka"+angka+" bilangan genap" : "Angka"+angka+" bilangan ganjil";
+        System.out.println(result);
 
     }
 }
