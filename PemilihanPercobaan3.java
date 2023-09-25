@@ -7,16 +7,16 @@ public class PemilihanPercobaan3 {
         double angka1, angka2, hasil;
         char operator;
 
-        System.out.println("Masukkan angka pertama: ");
+        System.out.print("Masukkan angka pertama: ");
         angka1 = input28.nextDouble();
-        System.out.println("Masukkan angka kedua: ");
+        System.out.print("Masukkan angka kedua: ");
         angka2 = input28.nextDouble();
-        System.out.println("Masukkan operator (+ - * /): ");
+        System.out.print("Masukkan operator (+ - * /): ");
         operator = input28.next().charAt(0);
 
         switch (operator) {
             case '+':
-                hasil = angka1 +angka2;
+                hasil = angka1 + angka2;
                 System.out.println(angka1 + " + " + angka2 + "=" + hasil);
                 break;
             case '-':
@@ -31,6 +31,10 @@ public class PemilihanPercobaan3 {
                 hasil = angka1 +angka2;
                 System.out.println(angka1 + " / " + angka2 + "=" + hasil);
                 break;
+            
+            default :
+            System.out.println("maaf operator yang anda masukkan tidak valid");
+
         }
 
     }
